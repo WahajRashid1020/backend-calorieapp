@@ -10,8 +10,7 @@ source!([
 # Fetch and assign GEMINI_API_KEY to app config
 config :calorie_ai, gemini_api_key: env!("GEMINI_API_KEY")
 
-IO.inspect(System.get_env("GEMINI_API_KEY"), label: "GEMINI_API_KEY from ENV")
-
+ 
 # Enable Phoenix server if PHX_SERVER is set
 if System.get_env("PHX_SERVER") do
   config :calorie_ai, CalorieAiWeb.Endpoint, server: true

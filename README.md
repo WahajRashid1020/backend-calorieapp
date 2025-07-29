@@ -1,19 +1,33 @@
-# CalorieAi
+# CalorieAI - Phoenix API Backend
 
-To start your Phoenix server:
+This is the Elixir/Phoenix backend for CalorieAI. It exposes an API that accepts a food description and returns a detailed calorie breakdown using Google's Gemini Pro AI model.
 
-- Run `mix setup` to install and setup dependencies
-- Run source .env.dev in terminal
-- Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## 🚀 Live Deployment
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+- 🌐 API URL: [https://backend-calorieapp-1.onrender.com/api/calories](https://backend-calorieapp-1.onrender.com/api/calories)
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## 🔧 Technologies Used
 
-## Learn more
+- Elixir + Phoenix (API only)
+- Finch (HTTP client)
+- Gemini AI API (text model)
+- Mox (test mocking)
+- ExUnit (unit and integration testing)
+- CORSPlug
 
-- Official website: https://www.phoenixframework.org/
-- Guides: https://hexdocs.pm/phoenix/overview.html
-- Docs: https://hexdocs.pm/phoenix
-- Forum: https://elixirforum.com/c/phoenix-forum
-- Source: https://github.com/phoenixframework/phoenix
+## 📦 Installation & Setup
+
+```bash
+# Install dependencies
+mix deps.get
+
+# Set environment variables
+cp .env.dev .env
+source .env.dev
+
+# Run tests
+mix test
+
+# Run server
+mix phx.server
+```
