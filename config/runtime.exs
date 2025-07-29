@@ -33,7 +33,7 @@ if config_env() == :prod do
     socket_options: maybe_ipv6
 
   secret_key_base =
-    System.get_env("SECRET_KEY_BASE") ||
+    System.get_env("SECRET_KEY_BASE") || 10
       raise """
       environment variable SECRET_KEY_BASE is missing.
       You can generate one by calling: mix phx.gen.secret
