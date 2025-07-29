@@ -14,7 +14,7 @@ config :calorie_ai,
   generators: [timestamp_type: :utc_datetime, binary_id: true]
 
 # Configures the endpoint
-config :calorie_ai, CalorieAiWeb.Endpoint,
+config :calorie_ai, CalorieAiWeb.Endpoint,server: true,
   url: [host: "localhost"],
   adapter: Bandit.PhoenixAdapter,
   render_errors: [
