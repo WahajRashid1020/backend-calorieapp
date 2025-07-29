@@ -3,7 +3,7 @@ defmodule CalorieAiWeb.Endpoint do
 
 
   plug CORSPlug,
-  origin: ["https://mymealapp.vercel.app/"],
+  origin: ["https://mymealapp.vercel.app"],
   methods: ["GET", "POST", "OPTIONS"],
   headers: ["Content-Type", "Authorization"]
 
