@@ -26,7 +26,7 @@ defmodule CalorieAi.Gemini do
       }
     - Be as accurate as possible with your calorie estimations based on the provided details.
     - If a user provides vague information, make reasonable assumptions (e.g., 'a glass of milk' assumes 2% milk).
-    - Provide a short, constructive feedback on the meal's nutritional value.
+    - Provide a short, constructive feedback on the meal's nutritional value with detailed calories brak down also tell if it is more or less effective for weight gain or less.
     - Do not include any text outside of the JSON object.
     """
 
