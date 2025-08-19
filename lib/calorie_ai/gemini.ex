@@ -21,7 +21,7 @@ defmodule CalorieAi.Gemini do
     - Respond in valid JSON format.
     - Structure: {
         totalCalories: number,
-        items: [{ name: string, calories: number, servingSize: string }],
+        items: [{ name: string, calories: number,protien: number,carbs: number,fiber: number,fat: number,sugar: number, servingSize: string }],
         feedback: string
       }
     - Be as accurate as possible with your calorie estimations based on the provided details.
